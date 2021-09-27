@@ -4,11 +4,11 @@
 
 ## Demo
 
-![demo](https://github.com/asken-private/HalfModal/blob/master/Screenshots/screen.gif)
+![demo](https://github.com/askendiet/HalfModal/blob/master/Screenshots/screen.gif)
 
 ## Requirements
 - iOS 12
-- Xcode 12
+- Xcode 12.5
 
 ## Example
 ```swift
@@ -28,7 +28,7 @@ final class FirstViewController: UIViewController, HalfModalPresenter {
 ## Installation
 ### Swift Package Manager
 ```
-git@github.com:asken-private/HalfModal.git
+https://github.com/askendiet/HalfModal.git
 ```
 
 ## References
