@@ -1,0 +1,52 @@
+# Xcode
+.DS_Store
+/.build
+/Packages
+/*.xcodeproj
+xcuserdata/
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+*.moved-aside
+DerivedData
+.idea/
+
+# fastlane
+fastlane/report.xml
+fastlane/sigh
+fastlane/test_output
+.env.secret
+*.dSYM.zip
+deps.zip
+.env.secret
+fastlane/README.md
+
+# Carthage
+Carthage/*
+!Carthage/.gitkeep
+
+# R.swift
+*.generated.swift
+
+# Realm
+Resources/menus.realm.*
+
+# abe
+long_task.sh
+
+Pods
+
+# Bitrise
+codesigndoc_exports/
+
+# gem
+vendor

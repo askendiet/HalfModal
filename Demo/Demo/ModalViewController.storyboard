@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IY5-1b-d86">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Modal View Controller-->
+        <scene sceneID="9Jv-PT-A1J">
+            <objects>
+                <viewController id="IY5-1b-d86" customClass="ModalViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jgB-pU-k3z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kjg-XT-Bcn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="89"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nax-ii-4vO">
+                                        <rect key="frame" x="184.5" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="MC1-JG-48p"/>
+                                            <constraint firstAttribute="width" constant="45" id="djw-q3-xOr"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="chevron.up" catalog="system"/>
+                                        <connections>
+                                            <action selector="closeButtonTapped:" destination="IY5-1b-d86" eventType="touchUpInside" id="8uB-cR-3Sb"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="D8c-TU-MsE">
+                                        <rect key="frame" x="130.5" y="45" width="153" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2V2-9H-vJp">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="44"/>
+                                                <state key="normal" title="Top"/>
+                                                <connections>
+                                                    <action selector="topTapped:" destination="IY5-1b-d86" eventType="touchUpInside" id="hXv-M7-TIL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuU-74-7P9">
+                                                <rect key="frame" x="51" y="0.0" width="51" height="44"/>
+                                                <state key="normal" title="Middle"/>
+                                                <connections>
+                                                    <action selector="middleTapped:" destination="IY5-1b-d86" eventType="touchUpInside" id="160-pm-bN0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ob-LQ-Ctj">
+                                                <rect key="frame" x="102" y="0.0" width="51" height="44"/>
+                                                <state key="normal" title="Bottom"/>
+                                                <connections>
+                                                    <action selector="bottomTapped:" destination="IY5-1b-d86" eventType="touchUpInside" id="a1Z-GP-uuS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="2rB-a0-WJV"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iBl-kI-QfD"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="Kjg-XT-Bcn" firstAttribute="top" secondItem="iBl-kI-QfD" secondAttribute="top" id="74o-Eb-Hwd"/>
+                            <constraint firstAttribute="trailing" secondItem="Kjg-XT-Bcn" secondAttribute="trailing" id="Tks-gl-YHa"/>
+                            <constraint firstItem="Kjg-XT-Bcn" firstAttribute="leading" secondItem="jgB-pU-k3z" secondAttribute="leading" id="fYl-V7-qYh"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sbw-WE-VYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-845" y="-343"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.up" catalog="system" width="128" height="72"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
