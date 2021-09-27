@@ -4,7 +4,7 @@
 
 ## Demo
 
-![demo](https://github.com/askendiet/HalfModal/blob/master/Screenshots/screen.gif)
+![demo](/Screenshots/screen.gif)
 
 ## Requirements
 - iOS 12
