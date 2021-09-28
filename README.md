@@ -1,6 +1,6 @@
-# HaldModal
+# HalfModal
 
-- A library for displaying viewController with HaldModal.
+- A library for displaying viewController with HalfModal.
 
 ## Demo
 
