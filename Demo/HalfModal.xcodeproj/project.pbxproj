@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002206F327463264008AF0A6 /* HalfModal in Frameworks */ = {isa = PBXBuildFile; productRef = 002206F227463264008AF0A6 /* HalfModal */; };
 		6174A5FE25F5D28200F22ED3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6174A5FD25F5D28200F22ED3 /* TableViewController.swift */; };
-		619D0AC626E05D6E0006C347 /* HalfModal in Frameworks */ = {isa = PBXBuildFile; productRef = 619D0AC526E05D6E0006C347 /* HalfModal */; };
 		61B4FE152581EC7E00C6BF12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0215D254A6EB7007DACD1 /* AppDelegate.swift */; };
 		61B4FE192581ECA200C6BF12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E02163254A6EB8007DACD1 /* Main.storyboard */; };
 		61E021B9254A79A4007DACD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E021B8254A79A4007DACD1 /* SceneDelegate.swift */; };
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				619D0AC626E05D6E0006C347 /* HalfModal in Frameworks */,
+				002206F327463264008AF0A6 /* HalfModal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +113,7 @@
 			);
 			name = Demo;
 			packageProductDependencies = (
-				619D0AC526E05D6E0006C347 /* HalfModal */,
+				002206F227463264008AF0A6 /* HalfModal */,
 			);
 			productName = Demo;
 			productReference = 61E02190254A75D3007DACD1 /* Demo.app */;
@@ -143,7 +143,7 @@
 			);
 			mainGroup = 61E02141254A6E93007DACD1;
 			packageReferences = (
-				619D0AC426E05D6E0006C347 /* XCRemoteSwiftPackageReference "HalfModal" */,
+				002206F127463264008AF0A6 /* XCRemoteSwiftPackageReference "HalfModal" */,
 			);
 			productRefGroup = 61E0214C254A6E93007DACD1 /* Products */;
 			projectDirPath = "";
@@ -325,14 +325,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NRKVC4ZX66;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "t-osawa-009.Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = inc.asken.HalfModalDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,14 +345,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NRKVC4ZX66;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "t-osawa-009.Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = inc.asken.HalfModalDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,20 +383,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		619D0AC426E05D6E0006C347 /* XCRemoteSwiftPackageReference "HalfModal" */ = {
+		002206F127463264008AF0A6 /* XCRemoteSwiftPackageReference "HalfModal" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:asken-private/HalfModal.git";
+			repositoryURL = "https://github.com/askendiet/HalfModal";
 			requirement = {
-				kind = revision;
-				revision = c1f6acb7fa9baa64b068b7ce535754273783ae0f;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		619D0AC526E05D6E0006C347 /* HalfModal */ = {
+		002206F227463264008AF0A6 /* HalfModal */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 619D0AC426E05D6E0006C347 /* XCRemoteSwiftPackageReference "HalfModal" */;
+			package = 002206F127463264008AF0A6 /* XCRemoteSwiftPackageReference "HalfModal" */;
 			productName = HalfModal;
 		};
 /* End XCSwiftPackageProductDependency section */
